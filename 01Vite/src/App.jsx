@@ -1,8 +1,12 @@
-
+import One from "./first.jsx"
 function App() {
 
   return (
-    <h1>vite code here JSX</h1>
+    <>  
+    {/* "<>" this is called fregment 
+    we are allowed only one tag return form this function"</>" */}
+    <One />
+    </>
   )
 }
 

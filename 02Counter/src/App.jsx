@@ -11,15 +11,18 @@ function App() {
     
   // let counter = 5; no working here we have to use HOOKS
 
-  let addValue= () => {
-    // console.log("click",counter);
-    // counter = counter + 1 ;
-    if(counter < 20){
-      setCounter(counter + 1);
-    }
-    else{
-      alert("not more then 20");
-    }
+    let addValue= () => {
+      // console.log("click",counter);
+      // counter = counter + 1 ;
+      if(counter < 20){
+        setCounter(counter + 1);
+        setCounter(counter + 1);//not working for update _ useState is work in bach
+        setCounter(revCounter => revCounter + 1);
+        setCounter(revCounter => revCounter + 1);
+      }
+      else{
+        alert("not more then 20");
+      }
   }
 
   let minusValue = () => {

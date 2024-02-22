@@ -38,6 +38,13 @@ function App() {
               className = "outeline-none px-4 rounded-full text-white shadow-lg"
               style={{backgroundColor:"Black"}}
               >Black</button>
+
+              <button
+              onClick={() => setColor("yellow")}
+                className = "outeline-none px-4 rounded-full text-white shadow-lg"
+                style = {{backgroundColor:"Yellow"}}
+                >yellow
+              </button>
             
             </div>
         </div>
